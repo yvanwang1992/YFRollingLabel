@@ -24,8 +24,12 @@
     scrollView.backgroundColor = [UIColor grayColor];
     scrollView.contentSize = CGSizeMake(300, 1000);
     [self.view addSubview:scrollView];
-    NSArray *textArray = @[@"Windows Phone，力图打破人们与信息和应用之间的隔阂，提供适用于人们包括工作和娱乐在内完整生活的方方面面，最优秀的端到端体验。"];
-//  @[@"健康游戏忠告:",@"抵制不良游戏 拒绝盗版游戏",@"注意自我保护 谨防受骗上当",@"适度游戏益脑 沉迷游戏伤身",@"合理安排时间 享受健康生活"];
+    NSArray *textArray = //@[@"Windows Phone，力图打破人们与信息和应用之间的隔阂，提供适用于人们包括工作和娱乐在内完整生活的方方面面，最优秀的端到端体验。"];
+    //  @[@"健康游戏忠告:",@"抵制不良游戏 拒绝盗版游戏",@"注意自我保护 谨防受骗上当",@"适度游戏益脑 沉迷游戏伤身",@"合理安排时间 享受健康生活"];
+//    @[@"This is the first text",@"This is the second text",@"This is the third text",@"This is the fouth text",@"This is the fifth text"];
+    
+    @[@"THERE IS ONLY ONE TEXT IN THIS VIEW......"];
+    
     _label = [[YFRollingLabel alloc] initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 40)  textArray:textArray font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
     [scrollView addSubview:_label];
     _label.backgroundColor = [UIColor orangeColor];
