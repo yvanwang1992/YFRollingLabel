@@ -45,7 +45,6 @@
     self.internalWidth = KSelfWith / 3;
     self.speed = 0.1f;
     self.orientation = RollingOrientationNone;
-    self.isStopWhenTouch = YES;
     self.clipsToBounds = YES;
     
     //Get all the auto layout Size of arrayText;
@@ -102,21 +101,19 @@
 
 //UILabel Tap Event
 -(void)labelTap:(UITapGestureRecognizer *)gesture{
-    if(self.isStopWhenTouch){
-        NSInteger tag = ((UILabel *)[gesture view]).tag - 100;
-        NSInteger index;
-        if(tag == 0){   //The First One
-            index = _currentIndex;
-        }else if (tag == 1){  //The Next One
-            index = (_currentIndex + 1) % _textArray.count;
-        }else{  //Only One Label
-            index = _currentIndex;
-        }
+    NSInteger tag = ((UILabel *)[gesture view]).tag - 100;
+    NSInteger index;
+    if(tag == 0){   //The First One
+        index = _currentIndex;
+    }else if (tag == 1){  //The Next One
+        index = (_currentIndex + 1) % _textArray.count;
+    }else{  //Only One Label
+        index = _currentIndex;
+    }
         
-        //Label Click Block
-        if(self.labelClickBlock){
-            self.labelClickBlock(index);
-        }
+    //Label Click Block
+    if(self.labelClickBlock){
+        self.labelClickBlock(index);
     }
 }
 

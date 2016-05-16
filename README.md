@@ -1,39 +1,47 @@
 # YFRollingLabel
-YFRollingLabel 
+YFRollingLabel is a rolling Label using NSTimer.
 
-Introduction:
-YFRollingLabel is an rolling Label......
-
+Effection:
 if only one text need to be shown
-    it will roll in a fixed orientation automatic.
+    it will roll in a fixed direction automatic.
+ ![LongText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/LongText.gif)
 
- ![oneText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/OneText.gif)
-
-if more than one text should be shown
-    it will roll and recycle.
-
+if more than one text need to be shown
+    it will roll circularly.
  ![TextArray](https://github.com/yvanwang1992/YFRollingLabel/blob/master/TextArray.gif)
+
+if the width of the only one text is smaller than view's width 
+    it won't roll.
+ ![ShortText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/ShortText.gif)
+
 
 
 Please notice that Only Two Labels are used in this "YFRollingLabel".
-so if you set the InternalWidth a short distance and the text is not long enought,
+so if you set the "InternalWidth" and text a short width,
 it will break into showing the next label suddenly instead of smothly;
 
 # How To Use It?
 
-#  
-   1.#import "YFRollingLabel.h"
-
-   2._label = [[YFRollingLabel alloc] initWithFrame:frame textArray:@[@The first One”,@“The Second One”,@“The Third One”,@“The Last One”] font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
-
-and you can set speed  orientation  internalWidth etc. in the while.
+1.#import "YFRollingLabel.h"
 
 
-ClickEvent  Is a Block:
-you can use like this:
-_label.labelClickBlock = ^(NSInteger index){	
-	//Code
-};
+2.Initialization:
+  YFRollingLabel *label = [[YFRollingLabel alloc] initWithFrame:frame textArray:@[@The first One”,@“The Second One”,@“The Third One”,@“The Last One”] font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
+
+  Property:
+  speed:         pixel rolling for every 0.02s, default : 1.0f.
+  internalWidth: the width between two labels, default : a third of view's width.
+  orientation:   rolling from left to right or not: default : RollingOrientationLeft.
+
+  Method about Timer:
+  -(void)beginTimer;    start rolling
+  -(void)pauseTimer;    pause rolling
+  -(void)stopTimer;     stop  rolling
+
+  ClickEventBlock:
+  label.labelClickBlock = ^(NSInteger index){	
+	//Your Code.
+  };
 
 
 

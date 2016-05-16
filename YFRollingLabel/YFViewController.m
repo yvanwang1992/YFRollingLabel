@@ -32,7 +32,7 @@
                            @"THIS IS THE THIRD TEXT",
                            @"THIS IS THE FOURTH TEXT",
                            @"THIS IS THE FIFTH TEXT"];
-    //@[@"THERE IS ONLY ONE TEXT IN THIS VIEW......"];
+//    @[@"THIS IS ONLY ONE SHORT TEXT"];
     
     
     _label = [[YFRollingLabel alloc] initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 40)  textArray:textArray font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
@@ -51,7 +51,7 @@
     
     //Timer Control & Property Changed
     NSArray *array = @[@"Timer Start",@"Timer Pause",@"Timer Stop",
-                       @"Set Orientation:Left/Right",@"Set Slow Speed(0.1)",@"Set InternalWidth"];
+                       @"Set Orientation (Left/Right)",@"Set Slow Speed(0.1)",@"Set InternalWidth"];
     for (int i = 0; i < array.count ; i++) {
         UIButton *btn = [[UIButton alloc] initWithFrame:
                          CGRectMake(50,CGRectGetMaxY(_label.frame) + i * 50 + 20, self.view.frame.size.width - 100, 40)];
@@ -76,8 +76,6 @@
         case 2:
             [_label stopTimer];
             break;
-            
-            
         case 3:
             if(_label.orientation == RollingOrientationLeft){
                 [_label setOrientation:RollingOrientationRight];

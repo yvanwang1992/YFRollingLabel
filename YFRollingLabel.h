@@ -31,7 +31,6 @@ typedef NS_ENUM(NSInteger, RollingOrientation){
     
     NSInteger _currentIndex;//index of the Current Display Label
     
-    
     UIColor *_textColor;
     
     UIFont *_font;
@@ -48,8 +47,6 @@ typedef NS_ENUM(NSInteger, RollingOrientation){
 @property (nonatomic, assign) CGFloat internalWidth;
 
 @property (nonatomic, assign) CGFloat offsetX;
-
-@property (nonatomic, assign) BOOL isStopWhenTouch;
 
 @property (nonatomic, copy) LabelClickBlock labelClickBlock;
 
