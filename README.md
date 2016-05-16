@@ -27,22 +27,22 @@ it will break into showing the next label suddenly instead of smothly;
 
 # How To Use It?
 
-###1.import "YFRollingLabel.h"
+####1.import "YFRollingLabel.h"
 
-###2.Initialization:<p/>
+####2.Initialization:<p/>
   	YFRollingLabel *label = [[YFRollingLabel alloc] initWithFrame:frame textArray:@[@The first One”,@“The Second One”,@“The Third One”,@“The Last One”] font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
 
-###3.Property:<p/>
+####3.Property:<p/>
   	speed:         pixel rolling for every 0.02s, default : 1.0f.<p/>
   	internalWidth: the width between two labels, default : a third of view's width.<p/>
   	orientation:   rolling from left to right or not: default : RollingOrientationLeft.<p/>
 
-###4.Method about Timer:<p/>
+####4.Method about Timer:<p/>
   	-(void)beginTimer;    start rolling<p/>
   	-(void)pauseTimer;    pause rolling<p/>
   	-(void)stopTimer;     stop  rolling<p/>
 
-###5.ClickEventBlock:<p/>
+####5.ClickEventBlock:<p/>
   	label.labelClickBlock = ^(NSInteger index){	
 		//Your Code.
   	};
