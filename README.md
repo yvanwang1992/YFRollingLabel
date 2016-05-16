@@ -1,13 +1,17 @@
 # YFRollingLabel
 YFRollingLabel is a rolling Label using NSTimer.
 
-Effection:
+Effection: 
+<p/>
+
 if only one text need to be shown
     it will roll in a fixed direction automatic.
+<p><p/>
  ![LongText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/LongText.gif)
 
 if more than one text need to be shown 
     it will roll circularly.
+    <p><p/>
  ![TextArray](https://github.com/yvanwang1992/YFRollingLabel/blob/master/TextArray.gif)
 
 if the width of the only one text is smaller than view's width 
