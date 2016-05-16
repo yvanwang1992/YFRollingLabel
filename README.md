@@ -27,10 +27,10 @@ it will break into showing the next label suddenly instead of smothly;
 
 # How To Use It?
 
-1.#import "YFRollingLabel.h"
+##1.import "YFRollingLabel.h"
 
 
-2.##Initialization:<p/>
+##2.Initialization:<p/>
   YFRollingLabel *label = [[YFRollingLabel alloc] initWithFrame:frame textArray:@[@The first One”,@“The Second One”,@“The Third One”,@“The Last One”] font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
 
   ##Property:<p/>
