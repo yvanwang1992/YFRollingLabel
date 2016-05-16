@@ -1,7 +1,7 @@
 # YFRollingLabel
 YFRollingLabel is a rolling Label using NSTimer.
 
-Effection: 
+##Effection: 
 <p/>
 
 if only one text need to be shown
@@ -30,20 +30,20 @@ it will break into showing the next label suddenly instead of smothly;
 1.#import "YFRollingLabel.h"
 
 
-2.Initialization:<p/>
+2.##Initialization:<p/>
   YFRollingLabel *label = [[YFRollingLabel alloc] initWithFrame:frame textArray:@[@The first One”,@“The Second One”,@“The Third One”,@“The Last One”] font:[UIFont systemFontOfSize:20] textColor:[UIColor whiteColor]];
 
-  Property:<p/>
+  ##Property:<p/>
   speed:         pixel rolling for every 0.02s, default : 1.0f.<p/>
   internalWidth: the width between two labels, default : a third of view's width.<p/>
   orientation:   rolling from left to right or not: default : RollingOrientationLeft.<p/>
 
-  Method about Timer:<p/>
+  ##Method about Timer:<p/>
   -(void)beginTimer;    start rolling<p/>
   -(void)pauseTimer;    pause rolling<p/>
   -(void)stopTimer;     stop  rolling<p/>
 
-  ClickEventBlock:<p/>
+  ##ClickEventBlock:<p/>
   label.labelClickBlock = ^(NSInteger index){	
 	//Your Code.
   };
