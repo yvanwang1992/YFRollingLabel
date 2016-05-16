@@ -6,13 +6,13 @@ if only one text need to be shown
     it will roll in a fixed direction automatic.
  ![LongText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/LongText.gif)
 
-if more than one text need to be shown
+if more than one text need to be shown 
     it will roll circularly.
  ![TextArray](https://github.com/yvanwang1992/YFRollingLabel/blob/master/TextArray.gif)
 
 if the width of the only one text is smaller than view's width 
     it won't roll.
- ![ShortText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/ShortText.gif)
+ ![ShortText](https://github.com/yvanwang1992/YFRollingLabel/blob/master/ShortText.png)
 
 
 
