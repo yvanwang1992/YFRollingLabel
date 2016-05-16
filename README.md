@@ -1,6 +1,10 @@
 # YFRollingLabel
 YFRollingLabel is a rolling Label using NSTimer.
 
+
+
+[博客园记录: 【IOS】自定义可点击的多文本跑马灯YFRollingLabel](http://www.cnblogs.com/yffswyf/p/5498296.html) 
+
 ##Effection: 
 <p/>
 
